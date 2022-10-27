@@ -1,0 +1,49 @@
+#timeInterval {
+    display: flex;
+}
+
+#timeIntervalHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timeIntervalBox {
+    margin: .4rem;
+    padding: .5rem;
+    display: flex;
+    border: 0.1rem solid var(--font-color);
+    border-radius: 20px;
+}
+
+#radioButtonBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#radioButtonBox div {
+    border: 0.1rem solid var(--font-color);
+    list-style: none;
+    padding: .7rem;
+    margin: 1.5rem;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+   
+    #timeIntervalBox input {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+#timeInterval h3 {
+    margin: 1rem;
+}
+
+

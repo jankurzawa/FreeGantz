@@ -1,0 +1,30 @@
+#fourOfour {
+    display: flex;
+    margin: auto;
+
+}
+.container {
+    margin: auto;
+}
+#mainBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 89vh;
+}
+#picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+    width: auto;
+    top: 50%;
+}
+#picture img{
+    max-width: 35vw;
+}
+.container h1{
+    text-align: center;
+    font-size: 50px;
+}

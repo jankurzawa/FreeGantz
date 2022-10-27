@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_HomePageLayout";
+    ViewData["Title"] = "Login";
+}
+<link rel="stylesheet" href="~/css/admin.css" />
+
+<main>
+    <div class="container">
+        <div id="login">
+            <form asp-controller="Admin" asp-action="LogIn" method="post">
+                <div id="formEl">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" value="">
+                </div>
+                <div id="formEl">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" value="">
+                </div>
+                <div id="formEl">
+                    <input type="checkbox" onclick="ShowHiddenPassword()"> Show Password
+                </div>
+                <div id="formEl">
+                    <input id="sendButton" type="submit" value="Log In" >
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="~/js/AdminLogIn.js"></script>

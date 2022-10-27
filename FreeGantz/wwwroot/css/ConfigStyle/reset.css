@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 95vw;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+    .container {
+        width: 450px;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .container {
+        width: 600px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+    .container {
+        width: 1200px;
+    }
+}

@@ -1,0 +1,17 @@
+﻿#book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#bookButton {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #EFF8F3;
+    font-size: 30px;
+}
+    #bookButton:hover {
+        background-color: #F8EFF3;
+    }

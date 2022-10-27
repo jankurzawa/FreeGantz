@@ -1,0 +1,39 @@
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.info-box{
+    margin: 5px;
+    border: 5px solid #000000;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+}
+.picture{
+    padding: 2%;
+    width: 30%;
+    min-width: 220px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+.picture img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.info-text {
+    font-size: 18px;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    height: auto;
+    min-width: 220px;
+    max-width: 100%;
+    
+}

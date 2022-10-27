@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "_AdminLayout";;
+    ViewData["Title"] = "Create New Table";
+}
+
+<link rel="stylesheet" href="~/css/admin.css" />
+
+<main>
+    <h1>Create new table</h1>
+    <form asp-controller="Admin" asp-action="CreateNewTable" method="post">
+        <label for="size">Size:</label>
+        <input type="text" id="size" name="size" value=" Enter size">
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" value=" Enter description">
+        <input id="sendButton" type="submit" value="Submit">
+        </div>
+    </form>
+</main>

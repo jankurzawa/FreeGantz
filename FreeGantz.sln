@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeGantz", "FreeGantz\FreeGantz.csproj", "{152A2344-A8E8-4848-8DE8-C0EA0E7513FC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{587EE767-83CC-449D-A52A-A2A740984632} = {587EE767-83CC-449D-A52A-A2A740984632}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeGantz.Data", "FreeGantz.Data\FreeGantz.Data.csproj", "{587EE767-83CC-449D-A52A-A2A740984632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{152A2344-A8E8-4848-8DE8-C0EA0E7513FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{152A2344-A8E8-4848-8DE8-C0EA0E7513FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{152A2344-A8E8-4848-8DE8-C0EA0E7513FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{152A2344-A8E8-4848-8DE8-C0EA0E7513FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587EE767-83CC-449D-A52A-A2A740984632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587EE767-83CC-449D-A52A-A2A740984632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587EE767-83CC-449D-A52A-A2A740984632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587EE767-83CC-449D-A52A-A2A740984632}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AE1C742-54EF-436F-8312-D6A957B130E1}
+	EndGlobalSection
+EndGlobal

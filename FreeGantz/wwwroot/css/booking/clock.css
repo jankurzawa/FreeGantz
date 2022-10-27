@@ -1,0 +1,14 @@
+#inputTime{
+    display: flex;
+    justify-content: right;
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+#inputTime input{
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--font-color);
+    background-color: rgba(117, 117, 117, 0.229);
+}

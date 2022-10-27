@@ -1,0 +1,96 @@
+@media (min-width:900px) {
+
+    #food-menu {
+        display: flex;
+    }
+
+    #food-menu_holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #food-menu_box {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+        #food-menu_box li {
+            list-style: none;
+            padding: 1.8rem;
+            margin: 1rem;
+            border: 0.1rem solid var(--font-color);
+            border-radius: 20px;
+            position: relative;
+        }
+
+            #food-menu_box li::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -90px;
+                height: 4.4em;
+                width: 4.4em;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            #food-menu_box li:first-child::before {
+                background-image: url(../../src/menu/dailyTrash.png);
+            }
+
+            #food-menu_box li:nth-child(2)::before {
+                background-image: url(../../src/menu/weeklySlices.png);
+            }
+
+            #food-menu_box li:nth-child(3)::before {
+                background-image: url(../../src/menu/fruits.png);
+            }
+
+            #food-menu_box li:nth-child(4)::before {
+                background-image: url(../../src/menu/boomerDream.png);
+            }
+
+            #food-menu_box li:nth-child(5)::before {
+                background-image: url(../../src/menu/blackberry.png);
+            }
+
+    .tooltip {
+        position: relative;
+        display: block;
+        color: var(--font-color);
+    }
+
+        .tooltip p:first-child {
+        }
+
+        .tooltip > p:nth-child(2) {
+            background-color: rgb(151, 188, 199, 0.4);
+            border-radius: 4.5px;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 250px;
+            opacity: 0.6;
+            background-color: #97BCC7;
+            text-align: center;
+            border-radius: 9px;
+            padding: 8px 0;
+            line-height: 1.8;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            right: 150%;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+    .tooltiptext p {
+        text-shadow: 0.2px 0.4px black;
+    }
+}

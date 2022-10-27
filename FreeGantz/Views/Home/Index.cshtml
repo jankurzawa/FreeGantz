@@ -1,0 +1,44 @@
+﻿@{
+	Layout = "_HomePageLayout";
+	ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/indexPage.css" />
+<div id="body-holder">
+	<main>
+		<nav id="pizzaMenu">
+			<img class="pizzaMenu_Logo" src="" alt="FreGantz-Logo">
+			<span class="pizzaMenu_Logo"></span>
+			<ul>
+				<div class="pizzaMenu_row">
+					<li class="pizzaSlice-li">
+						<div id="pizzaSlice-1" class="pizzaMenu-img"></div>
+						<a href="./Home/Menu" class="pizzaMenu">
+							<p>Menu</p>
+						</a>
+					</li>
+					<li class=" pizzaSlice-li">
+						<div id="pizzaSlice-2" class="pizzaMenu-img"></div>
+						<a href="./Home/Booking" class="pizzaMenu">
+							<p>Booking</p>
+						</a>
+					</li>
+				</div>
+				<div class=" pizzaMenu_row">
+					<li class="pizzaSlice-li">
+						<div id="pizzaSlice-3" class="pizzaMenu-img"></div>
+							<a href="./Home/Contact" class="pizzaMenu">
+								<p>Contact</p>
+							</a>
+					</li>
+					<li class=" pizzaSlice-li">
+						<div id="pizzaSlice-4" class="pizzaMenu-img"></div>
+						<a href="./Home/AboutUs" class="pizzaMenu">
+							<p>About Us</p>
+						</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+    </main>
+</div>
+<script type="text/javascript" src="./js/PizzaMenu.js" asp-append-version="true"></script>

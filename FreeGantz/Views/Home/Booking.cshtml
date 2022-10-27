@@ -1,0 +1,85 @@
+﻿@{
+	ViewData["Title"] = "Book a table";
+}
+<link rel="stylesheet" href="~/css/booking.css" />
+
+<main>
+    <div class="container">
+        <section id="calendar-holder">
+            <div id="showcase-wrapper">
+                <div id="myCalendarWrapper"></div>
+            </div>
+        </section>
+        <div id="numberOfVictims">
+            <img id="BackNumber" src="~/src/ArrowBack.png">
+            <h2>Number of victims</h2>
+            <img id="UpNumber" src="~/src/ArrowForward.png">
+        </div>
+
+        <div id="numberOfClients">
+            <div>
+                <img src="~/src/UsersIcon.png" alt="">
+            </div>
+            <div>
+                <h2 id="changingNumberOfGuests">1</h2>
+            </div>
+        </div>
+        <div id="chooseTable">
+        </div>
+        <div id="timeInterval">
+            <div id="timeIntervalHolder">
+                <div id="timeIntervalBox">
+                    <form>
+
+                        <h3>Please select please select a time slot to reserve a table</h3>
+
+                        <div id="radioButtonBox">
+                            <div>
+                                <label for="int1">7-11</label>
+                                <input type="radio" id="int1" name="timeInterval" value="0">
+                            </div>
+                            <div>
+                                <label for="int2">11-15</label>
+                                <input type="radio" id="int2" name="timeInterval" value="1">
+                            </div>
+
+
+                            <div>
+                                <label for="int3">15-20</label>
+                                <input type="radio" id="int3" name="timeInterval" value="2">
+                            </div>
+
+                            <div>
+                                <label for="int4">20-01</label>
+                                <input type="radio" id="int4" name="timeInterval" value="3">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+         
+        @using (Html.BeginForm("CheckBookingAvailability", "Booking", FormMethod.Post))
+        {
+
+            <div id="orderSummary">
+            <img src="~/src/booking/people.png" id="peopleImg" alt="People" />
+            
+               @Html.TextBox("numberOfPeople", 1)
+              
+            <p id="guest">Guest</p>
+            <img src="~/src/booking/calendar.png" id="calendarImg" alt="Calendar" />
+            <p id="reservationDate">
+                
+                @Html.TextBox("reservationDate_date", "12.12.2022")
+
+                @Html.TextBox("reservationDate_hour", "07:00")
+        </div>
+            <div id="book">
+                <input id="bookButton" type="submit" value="Check Availability">
+            </div>
+         
+        }
+    </div>
+</main>

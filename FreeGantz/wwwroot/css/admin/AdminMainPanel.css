@@ -1,0 +1,36 @@
+﻿body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reservation_table {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+#reservation_table_head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 4fr;
+}
+#reservation_table_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+    #reservation_table_body .reservatio_row {
+        border: 1px solid black;
+        margin: 5px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+    }

@@ -1,0 +1,25 @@
+#calendar-holder{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+#calendar-holder #showcase-wrapper{
+    max-width: 600px;
+    margin: 10px 50px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: var(--font-color);
+    padding: 5px;
+}
+#calendar #calendar-days, #calendar #calendar-grid{
+    padding: 0 1px;
+}
+@media (min-width: 500px) {
+#calendar-holder{
+    font-size: 14px;
+}
+#calendar #calendar-days, #calendar #calendar-grid{
+    padding: 0 1em;
+}
+}

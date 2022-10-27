@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Restaurant for Freegans">
+    <meta name="keywords" content="garbage, food, restaurant">
+    <meta name="author" content="FreeGantz">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="~/src/favicon.ico">
+	<title>@ViewData["Title"] - FreeGantz</title>
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+	<div id="body-holder">
+
+		<header>
+		
+		</header>
+		<div class="container">
+			<main role="main" class="pb-3">
+				@RenderBody()
+			</main>
+		</div>
+	</div>
+
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; Made by FreeGantz 2022. No rights reserved - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+		</div>
+	</footer>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="~/js/NavBurger.js" asp-append-version="true"></script>
+	<script type="text/javascript" src="~/js/contact.js" asp-append-version="true"></script>
+	<script type="text/javascript" src="~/js/Booking/CalendarPicker.js" asp-append-version="true"></script>
+	<script type="text/javascript" src="~/js/Booking/Calendar.js" asp-append-version="true"></script>
+	<script type="text/javascript" src="~/js/Booking/counter.js" asp-append-version="true"></script>
+	<script type="text/javascript" src="~/js/Booking/ReservationHoursRadio.js" asp-append-version="true"></script>
+	<script type="text/javascript" src="~/js/Booking/reservationTime.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

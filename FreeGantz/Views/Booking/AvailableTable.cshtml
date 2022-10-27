@@ -1,0 +1,52 @@
+﻿@model FreeGantz.Models.AvailableTableModel
+
+
+@{
+	ViewData["Title"] = "FreeGantz - Accept reservation";
+}
+<link rel="stylesheet" href="~/css/booking.css" />
+   
+@{
+    @using (Html.BeginForm("BookReservation", "Booking", FormMethod.Post))
+    {
+        <div style="display:none">
+				@Html.TextBoxFor(model=>model.TableId)
+				@Html.TextBoxFor(model=>model.NumberOfGuest)
+				@Html.TextBoxFor(model=>model.ReservationDate)
+				@Html.TextBoxFor(model=>model.ReservationHours)
+				@Html.TextBoxFor(model=>model.Description)
+				@Html.TextBoxFor(model=>model.TableSize)
+		</div>
+        <div class="mainscreen">
+        <div class="card">
+          <div class="rightside">
+          <form action="">
+            <h1>Last step to book!</h1>
+            @Html.LabelFor(model=>model.Name)
+            @Html.TextBoxFor(model=>model.Name)<br/>
+            <span asp-validation-for="Name" class="text-danger"></span><br/><br/>
+            @Html.LabelFor(model=>model.Email)
+            @Html.TextBoxFor(model=>model.Email)<br/>
+            <span asp-validation-for="Email" class="text-danger"></span><br/><br/>
+            <h3>The table chosen for you.</h3>
+            <div class="reservation_data">
+            <p>Reservation time: <span>@Html.DisplayFor(model=>model.ReservationHours)</span></p>
+            <p>Reserviation date: <span>@Model.ReservationDate.ToShortDateString()</span></p>
+            </div>
+            <div class="table_data">
+            <p class="table_size">Count of your people: <span>@Model.NumberOfGuest</span></p>
+            <p class="table_size">Table size: <span>@Model.TableSize</span></p>
+            <p class="table_description">Table description: <span>@Model.Description</span></p>
+            </div>
+            <button type="submit" class="button">Book a Table!</button>
+          </form>
+        </div>
+        </div>
+        </div>
+    }
+}
+@section Scripts {
+    @{
+	await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

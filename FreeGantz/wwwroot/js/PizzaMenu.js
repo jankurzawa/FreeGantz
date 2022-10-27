@@ -1,0 +1,13 @@
+﻿const pizzaSlices = document.getElementsByClassName('pizzaSlice-li');
+const pizzaSlice1 = pizzaSlices[0];
+const pizzaSlice2 = pizzaSlices[1];
+const pizzaSlice3 = pizzaSlices[2];
+const pizzaSlice4 = pizzaSlices[3];
+pizzaSlice1.addEventListener("mouseover", (e) => { pizzaSlice1.getElementsByClassName("pizzaMenu-img")[0].classList += " AnimationActive" });
+pizzaSlice1.addEventListener("mouseout", (e) => { pizzaSlice1.getElementsByClassName("pizzaMenu-img")[0].classList.remove("AnimationActive") });
+pizzaSlice2.addEventListener("mouseover", (e) => { pizzaSlice2.getElementsByClassName("pizzaMenu-img")[0].classList += " AnimationActive" });
+pizzaSlice2.addEventListener("mouseout", (e) => { pizzaSlice2.getElementsByClassName("pizzaMenu-img")[0].classList.remove("AnimationActive") });
+pizzaSlice3.addEventListener("mouseover", (e) => { pizzaSlice3.getElementsByClassName("pizzaMenu-img")[0].classList += " AnimationActive" });
+pizzaSlice3.addEventListener("mouseout", (e) => { pizzaSlice3.getElementsByClassName("pizzaMenu-img")[0].classList.remove("AnimationActive") });
+pizzaSlice4.addEventListener("mouseover", (e) => { pizzaSlice4.getElementsByClassName("pizzaMenu-img")[0].classList += " AnimationActive" });
+pizzaSlice4.addEventListener("mouseout", (e) => { pizzaSlice4.getElementsByClassName("pizzaMenu-img")[0].classList.remove("AnimationActive") });

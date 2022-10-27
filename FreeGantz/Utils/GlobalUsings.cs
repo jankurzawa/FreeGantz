@@ -1,0 +1,10 @@
+﻿global using FreeGantz.Data.DAO.Interfaces;
+global using FreeGantz.Data.Entries;
+global using FreeGantz.Models;
+global using FreeGantz.Utils;
+global using Microsoft.AspNetCore.Mvc;
+global using System.Net.Mail;
+global using System.Diagnostics;
+global using FreeGantz.Data.Context;
+global using FreeGantz.Data.DAO;
+global using Microsoft.EntityFrameworkCore;

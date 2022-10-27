@@ -1,0 +1,137 @@
+﻿main .container h2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+#contactFormHolder {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+#contactForm
+{
+    margin-top: 50px;
+}
+#contactForm label
+{
+    display: block;
+}
+#contactForm input[type=button]
+{
+    border: none;
+    padding: 3px;
+    background-color: #EFF8F3;
+    border-radius: 5px;
+}
+
+    #contactForm input[type=button]:hover {
+        background-color: #F8EFF3;
+    }
+
+#name {
+    width: calc(100% - 51px);
+    border: none;
+    border-radius: 5px;
+}
+
+#submitName
+{
+    margin-bottom: 30px;
+}
+
+#email {
+    width: calc(100% - 51px);
+    border: none;
+    border-radius: 5px;
+}
+
+#submitEmail {
+    margin-bottom: 30px;
+    border: none;
+    padding: 3px;
+    background-color: #EFF8F3;
+    border-radius: 5px;
+}
+
+#messageArea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+#checkboxes label
+{
+    display: flex;
+    display: inline;
+}
+#checkBox label{
+    display: inline;
+}
+#finalBlock label {
+    display: inline;
+}
+#buttons {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sendButton {
+    display: inline;
+    margin-right: 5px;
+    border: none;
+    padding: 3px;
+    background-color: #EFF8F3;
+    border-radius: 5px;
+}
+    #sendButton:hover {
+        background-color: #F8EFF3;
+    }
+#reset {
+    display: inline;
+    margin-left: 5px;
+    border: none;
+    padding: 3px;
+    background-color: #EFF8F3;
+    border-radius: 5px;
+}
+    #reset:hover {
+        background-color: #F8EFF3;
+    }
+
+#contactDetails{
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    float: right;
+}
+#phone
+{
+    margin-top: 20px;
+}
+#hours
+{
+    margin-top: 20px;
+}
+p a{
+    color: black;
+    text-decoration: none;
+}
+p a:visited{
+    color: black;
+    text-decoration: none;
+}
+p a:hover{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,11 @@
+#body-holder {
+    min-height: calc(100vh - var(--footer-height));
+}
+
+footer {
+    height: var(--footer-height);
+    background-color: var(--footer-background-color);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}

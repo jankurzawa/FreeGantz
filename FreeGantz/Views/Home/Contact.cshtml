@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<link rel="stylesheet" href="~/css/contact.css" />
+
+<main>
+    <div class="container">
+        <!-- Wszystko w container -->
+        <h2>Contact us!</h2>
+        <div class="contactContainer">
+            <div id="contactFormHolder">
+                <form asp-controller="Contact" asp-action="SendBtnClick" id="contactForm" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value=" Enter your name">
+                    <input id="submitName" type="button" value="Submit">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" value=" Give your email">
+                    <input id="submitEmail" type="button" value="Submit">
+                    <textarea id="messageArea" name="message"> Write something nice here :-)</textarea>
+                    <div id="checkBoxes">
+                        <div id="checkBox">
+                            <input type="checkbox" id="notBot" name="notBot" value="I am not a bot">
+                            <label for="notBot">I am not a bot</label>
+                        </div>
+                        <div id="checkBox">
+                            <input type="checkbox" id="notPoor" name="notPoor" value="I am not poor">
+                            <label for="notPoor">I am not poor</label>
+                        </div>
+                        <div id="checkBox">
+                            <input type="checkbox" id="notMenel" name="notMenel" value="I am not a menel">
+                            <label for="notMenel">I am not a menel</label>
+                        </div>
+                        <div id="checkBox">
+                            <input type="checkbox" id="iphone" name="iphone" value="I have at least Iphone 12">
+                            <label for="iphone">I have at least Iphone 12</label>
+                        </div>
+                    </div>
+                    <div id="finalBlock">
+
+                        <div id="buttons">
+                            <input id="sendButton" type="submit" value="SEND" disabled>
+                            <input id="reset" type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="contactDetails">
+                <address>
+                    <p>Zagacie</p>
+                    <p>32-070</p>
+                    <p>
+                        <a href="tel:+48692137420">+ 48 692 137 420</a>
+                    </p>
+                    <p>
+                        <a href="mailto:Bucket@FreeGantz.io">Bucket@FreeGantz.io</a>
+                    </p>
+                    <p id="hours">Opening hours:</p>
+                    <p>Tuesday – Saturday from 07.00 to 01:00.</p>
+                    <p>Sunday, Monday – closed.</p>
+                    <a href="https://www.facebook.com/FreeGantz/?ref=page_internal" target="_blank"><img src="~/src/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/freegantz/" target="_blank"><img src="~/src/ig.png" alt="Instagram"></a>
+                </address>
+            </div>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="./js/contact.js" asp-append-version="true"></script>

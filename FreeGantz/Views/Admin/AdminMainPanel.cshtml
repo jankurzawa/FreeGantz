@@ -1,0 +1,65 @@
+﻿@model IEnumerable<FreeGantz.Data.Entries.Reservation>;
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["Title"] = "List Of Reservations";
+}
+<link rel="stylesheet" href="~/css/admin.css" />
+
+<h1>Today's Reservations'</h1>
+
+<div id="reservation_table">
+    <body>
+        @if (Model.Any())
+        {
+            <div id="reservation_table_head">
+                    <div>
+                        @Html.DisplayNameFor(model => model.ReservationHour)
+                    </div>
+                    <div>
+                        @Html.DisplayNameFor(model => model.NameOfClient)
+                    </div>
+                    <div>
+                        @Html.DisplayNameFor(model => model.Table.Size)
+                    </div>
+                    <div>
+                        @Html.DisplayNameFor(model => model.CustomerEmail)
+                    </div>
+            </div>
+            <div id="reservation_table_body">
+                @foreach (var item in Model)
+                {
+                    <div class="reservatio_row">
+                        <div class="reservationHour">
+                            @Html.DisplayFor(model => item.ReservationHour)
+                        </div>
+                        <div class="nameOfClient">
+                            @Html.DisplayFor(model => item.NameOfClient)
+                        </div>
+                        <div class="sizeOfTable">
+                            @Html.DisplayFor(model => item.Table.Size)
+                        </div>
+                        <div class="customerEmail">
+                            @Html.DisplayFor(model => item.CustomerEmail)
+                        </div>
+                        <div>
+                            <form asp-action="Delete" asp-route-id="@item.Id">
+                                <button type="submit" class="btn btn-danger"
+                                onclick="return confirm('Are you sure to delete this record?')">
+                                    Delete
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <p>No reservations for today!</p>
+        }
+        <script src="~/js/pagination.js"></script>
+    </body>
+</div>
+

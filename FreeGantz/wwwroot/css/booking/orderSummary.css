@@ -1,0 +1,34 @@
+﻿#orderSummary
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+#peopleImg
+{
+    max-width: 30px;
+    margin-right: 10px;
+}
+#numberOfPeople
+{
+    margin-right: 5px;
+}
+#guest
+{
+    margin-right: 10px;
+}
+#calendarImg
+{
+    max-width: 30px;
+}
+#reservationDate
+{
+}
+#guestNumberBox {
+    border: none;
+    background-color: red;
+    resize: none;
+    outline: none;
+}

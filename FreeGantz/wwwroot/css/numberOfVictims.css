@@ -1,0 +1,11 @@
+#numberOfVictims{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#numberOfClients{
+    display: inline;
+    text-align: center;
+    justify-content: center;
+}

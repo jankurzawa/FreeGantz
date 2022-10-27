@@ -1,0 +1,24 @@
+﻿body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+#login {
+
+    display: flex;
+    justify-content: center;
+}
+#formEl {
+    display: flex;
+    justify-content: center;
+}
+    #formEl input {
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+
